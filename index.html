@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    
+    <title>Portfólio de Atividades</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: #050510;
+            overflow-x: hidden;
+        }
+
+        /* FUNDO NEON NOVO (DIAGONAL) */
+        .background {
+            position: fixed;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+            overflow: hidden;
+        }
+
+        .linha {
+            position: absolute;
+            width: 150%;
+            height: 2px;
+            background: linear-gradient(90deg, transparent, #8a2be2, #00aaff, transparent);
+            transform: rotate(-25deg);
+            animation: mover 8s linear infinite;
+            opacity: 0.5;
+        }
+
+        .linha:nth-child(1) { top: 10%; animation-delay: 0s; }
+        .linha:nth-child(2) { top: 30%; animation-delay: 2s; }
+        .linha:nth-child(3) { top: 50%; animation-delay: 4s; }
+        .linha:nth-child(4) { top: 70%; animation-delay: 1s; }
+        .linha:nth-child(5) { top: 90%; animation-delay: 3s; }
+
+        @keyframes mover {
+            from { transform: translateX(-60%) rotate(-25deg); }
+            to { transform: translateX(0%) rotate(-25deg); }
+        }
+
+        /* CONTAINER */
+        .container {
+            width: 60%;
+            margin: 60px auto;
+            padding: 30px;
+            border-radius: 20px;
+            text-align: center;
+
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(15px);
+
+            box-shadow: 0 0 30px rgba(138, 43, 226, 0.4);
+            border: 1px solid rgba(138, 43, 226, 0.3);
+        }
+
+        h1 {
+            color: #b266ff;
+            text-shadow: 0 0 15px #8a2be2;
+        }
+
+        h2 {
+            margin-top: 30px;
+            color: #00aaff;
+        }
+
+        hr {
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px 0;
+        }
+
+        /* BOTÕES NOVOS */
+        a {
+            display: inline-block;
+            padding: 12px 25px;
+            background: transparent;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 12px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 2px solid #8a2be2;
+            position: relative;
+            overflow: hidden;
+        }
+
+        a::before {
+            content: "";
+            position: absolute;
+            width: 0%;
+            height: 100%;
+            left: 0;
+            top: 0;
+            background: linear-gradient(90deg, #8a2be2, #00aaff);
+            transition: 0.4s;
+            z-index: -1;
+        }
+
+        a:hover::before {
+            width: 100%;
+        }
+
+        a:hover {
+            transform: scale(1.08);
+            box-shadow: 0 0 20px #8a2be2;
+        }
+
+        footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #aaa;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- FUNDO NEON -->
+    <div class="background">
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+        <div class="linha"></div>
+    </div>
+
+    <!-- CONTEÚDO -->
+    <div class="container">
+
+        <h1> Portfólio de Atividades</h1>
+
+        <hr>
+
+        <h2> Dados do Aluno</h2>
+        <p><strong>Instituição:</strong> Instituto Federal do Tocantins</p>
+        <p><strong>Curso:</strong> Sistema Para Internet</p>
+        <p><strong>Nome:</strong> Isabella Marques</p>
+        <p><strong>Turma:</strong> 20261.1.035.409.1M-27072-Introdução a Construção de Páginas Web</p>
+        <p><strong>Semestre:</strong> 1º semestre</p>
+        <p><strong>Disciplina:</strong> Páginas Web</p>
+        <p><strong>Professor:</strong> Carlos Henrique</p>
+
+        <hr>
+
+        <h2> Atividades</h2>
+
+        <ul>
+           
+            <li><a href="https://isabellasouza4-wq.github.io/Projeto-X-Motos-/" target="_blank" rel="noopener noreferrer">Atividade 1, 2, 3 - Minha primeira página web 28/02/26 - Links 03/03/26 - Web Site hospedado em provedor gratuito 10/03/26 </a></li>
+
+            <li><a href="https://isabellasouza4-wq.github.io/site-cinema-velozes-e-furiosos-7/" target="_blank" rel="noopener noreferrer">Atividade 4 - Formatação de elementos HTML 17/03/26</a></li>
+
+            <li><a href="https://isabellasouza4-wq.github.io/Evo-Tec-Redes-Comp/" target="_blank" rel="noopener noreferrer">Atividade 5 - Listas e citações 24/03/26</a></li>
+
+            <li><a href="https://isabellasouza4-wq.github.io/Portal-de-Concurso-Publico/" target="_blank" rel="noopener noreferrer">Atividade 6 - TABELAS 31/03/26</a></li>
+        </ul>
+
+        <hr>
+
+    </div>
+
+</body>
+</html>
